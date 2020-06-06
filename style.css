@@ -1,0 +1,335 @@
+:root {
+  --main-color: #F07645;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+header {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+  line-height: 3em;
+}
+
+header h1 {
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+header p {
+  font-size: 2em;
+  color: white;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+}
+
+/* --------------Nav Bar------------------------- */
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 17, 17, 0.9); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  /* color: #f1f1f1; */
+  color: var(--main-color);
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* --------------Nav Bar------------------------- */
+
+
+#menu-bar {
+  background: red;
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  z-index: -1;
+}
+
+#menu-bar:hover {
+  background: rgb(228, 81, 81);
+  color: whitesmoke;
+}
+
+
+/* --------------------------------------------------------- */
+small {
+  font-size: 15px;
+  color: grey;
+}
+
+#card-container {
+  text-align: center;
+  color: var(--main-color);
+  padding: 50px;
+}
+
+.card {
+  color: white;
+  height: 300px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.card p {
+  margin-top: 20px;
+}
+
+.large-num {
+  font-size: 4em;
+}
+
+#death-table {
+  margin-top: 50px;
+}
+
+footer {
+  background: var(--main-color);
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  padding: 20px 0px;
+  margin: 0;
+  opacity: 0.4;
+}
+
+
+/* ---------Call Center------------- */
+
+#call-mohs {
+  line-height: 2em;
+  color: grey;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.callButton {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.callButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.callButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* ---------Call Center------------- */
+
+/* clinic address */
+#tabCtn {
+  margin-top: 100px;
+}
+
+#tabCtn > h3 {
+  color: white;
+  background: var(--main-color);
+  padding: 20px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#tab-container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+
+/* clinic address */
+
+
+/* go to top btn */
+
+#topBtn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 0px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  opacity: 0.2;
+}
+
+#topBtn:hover {
+  opacity: 1;
+}
+
+/* go to top btn */
+
+
+.ques {
+  padding: 10px 0;
+  font-size: 1em;
+  
+}
+
+#result {
+  margin: 50px 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+#ques_container > h3 {
+  color: white;
+  background: var(--main-color);
+  padding: 20px;
+  margin: 50px 0;
+}
+
+#ques_container > button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#ques_container > button:hover {
+  background-color: #3e8e41;
+}
+
+#ques_container > button:active {
+  background-color: var(--main-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.knowledge-gif {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 6px 7px 24px -1px rgba(0,0,0,0.44);
+  margin:100px 0 50px 0;
+  padding: 20px;
+  background: var(--main-color);
+}
+
+.knowledge-gif:hover {
+  padding: 0;
+}
