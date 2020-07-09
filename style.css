@@ -108,7 +108,7 @@ header p {
 #menu-bar {
   background: red;
   text-align: center;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
   cursor: pointer;
   color: white;
   font-size: 1.5em;
@@ -118,6 +118,10 @@ header p {
 #menu-bar:hover {
   background: rgb(228, 81, 81);
   color: whitesmoke;
+}
+
+#menu-bar > p {
+  padding: 10px 0;
 }
 
 
@@ -146,6 +150,7 @@ small {
 
 .large-num {
   font-size: 4em;
+  text-shadow: 1px 7px 5px #8a9792;
 }
 
 #death-table {

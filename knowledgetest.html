@@ -66,16 +66,14 @@
         <p>Menu &#9776;</p>
     </div>
 
-    <!-- navbar -->
-    <div id="mySidebar" class="sidebar">
+     <!-- navbar -->
+     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html#menu-bar">ပင်မစာမျက်နှာ</a>
         <a href="mohs-call-center.html#menu-bar">MOHS Call Center</a>
         <a href="clinics.html#menu-bar">ဆေးခန်းများ</a>
+        <a href="knowledge.html#menu-bar">အသိပညာပေး</a>
         <a href="knowledgetest.html#menu-bar">Test Your Knowledge</a>
-        <a href="#menu-bar">လှူဒါန်းရန်</a>
-        <a href="#menu-bar">အခြားအသုံးဝင်သော Websites & Apps</a>
-        <a href="#menu-bar">ကျွန်ုပ်တို့အကြာင်းနှင့်ဆက်သွယ်ရန်</a>
     </div>
 
 
@@ -94,7 +92,7 @@
         </div>
 
         <div class="ques">
-            <div>နှပ်ညှစ်ပြီး တွေ့ကရာ လိုက်သုတ်မယ်...</div>
+            <div>တခါသုံးမက်စ်ကို ပြန်လျှော်သုံးမယ်...</div>
             <input type="radio" name="ques_2" id="y2" value="yes" required>
             <label for="y2">Yes</label>
             <input type="radio" name="ques_2" id="n2" value="no" required>
@@ -102,7 +100,7 @@
         </div>
 
         <div class="ques">
-            <div>လက်မဆေးပဲ အစားစားပစ်မယ်...</div>
+            <div>လက်ဆေးပြီးမှ အစားစားမယ်...</div>
             <input type="radio" name="ques_3" id="y3" value="yes" required>
             <label for="y3">Yes</label>
             <input type="radio" name="ques_3" id="n3" value="no" required>
@@ -110,7 +108,7 @@
         </div>
 
         <div class="ques">
-            <div>တံတွေးကို တွေ့ရာနေရာ ထွေးပစ်မယ်...</div>
+            <div>နိုင်ငံခြားကို အလည်သွားမယ်...</div>
             <input type="radio" name="ques_4" id="y4" value="yes" required>
             <label for="y4">Yes</label>
             <input type="radio" name="ques_4" id="n4" value="no" required>
@@ -126,7 +124,7 @@
         </div>
 
         <div class="ques">
-            <div>ဘောင်းဘီနက် လက်ကို သုတ်ပလိုက်မယ်...</div>
+            <div>အပြင်ကပြန်လာပြီးတိုင်း လက်ကို သေချာဆေးမယ်...</div>
             <input type="radio" name="ques_6" id="y6" value="yes" required>
             <label for="y6">Yes</label>
             <input type="radio" name="ques_6" id="n6" value="no" required>
@@ -134,7 +132,7 @@
         </div>
 
         <div class="ques">
-            <div>ရုံးတက်/ဆင်းချိန် အများသုံးဘက်စ်ကားတွေ အစီးရေ လျှော့ချမယ်...</div>
+            <div>အစားအစာတွေကို ပိုးသတ်ဆေးဖြန်းပီးမှ စားရမယ်...</div>
             <input type="radio" name="ques_7" id="y7" value="yes" required>
             <label for="y7">Yes</label>
             <input type="radio" name="ques_7" id="n7" value="no" required>
@@ -199,7 +197,7 @@
                 marks = marks + 1;
             }
 
-            if (ans_3 == "no") {
+            if (ans_3 == "yes") {
                 marks = marks + 1;
             }
 
@@ -211,7 +209,7 @@
                 marks = marks + 1;
             }
 
-            if (ans_6 == "no") {
+            if (ans_6 == "yes") {
                 marks = marks + 1;
             }
 
@@ -234,12 +232,15 @@
             if (marks == 10) {
                 document.getElementById("result").innerHTML = "သင့်တွင် Convid-19 ကို ရင်ဆိုင်ရန် ကောင်းမွန်သော အသိဉာဏ်ရှိပါသည်။";
                 document.getElementById("result").style.background = "green";
+                document.getElementById("result").style.boxShadow = "10px 10px 8px #888888";
             } else if (marks >= 5) {
                 document.getElementById("result").innerHTML = "သင့်တွင် Convid-19 ကို ရင်ဆိုင်ရန် လုံလောက်သော အသိဉာဏ်ရှိပါသည်။";
                 document.getElementById("result").style.background = "blue";
+                document.getElementById("result").style.boxShadow = "10px 10px 8px #888888";
             } else {
                 document.getElementById("result").innerHTML = "သင့်တွင် Convid-19 ကို ရင်ဆိုင်ရန် လုံလောက်သော အသိဉာဏ်မရှိသေးပါ။";
                 document.getElementById("result").style.background = "red";
+                document.getElementById("result").style.boxShadow = "10px 10px 8px #888888";
             }
 
         }
