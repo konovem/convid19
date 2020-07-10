@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Android App</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--For Pie Chart-->
+
+    <script src="piechart.js"></script>
+
+    <script src="sidebar.js"></script>
+
+    <script src="gototop.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <img src="img/myanmar-flag.gif" alt="Myanmar Flag" style="margin-bottom: 20px;">
+            <h1>Save Myanmar</h1>
+            <p>#Protect_Together</p>
+            <p>#Fight_Together</p>
+            <p>#Help_Together</p>
+        </div>
+    </header>
+
+    <div id="menu-bar" onclick="openNav()">
+        <p>Menu &#9776;</p>
+    </div>
+
+
+    <!-- navbar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html#menu-bar">ပင်မစာမျက်နှာ</a>
+        <a href="mohs-call-center.html#menu-bar">MOHS Call Center</a>
+        <a href="clinics.html#menu-bar">ဆေးခန်းများ</a>
+        <a href="knowledge.html#menu-bar">အသိပညာပေး</a>
+        <a href="knowledgetest.html#menu-bar">Test Your Knowledge</a>
+        <a href="download.html#menu-bar">Download Android App</a>
+    </div>
+
+    <!-- -------------------- download -------------------------- -->
+
+    <div id="dw-container" class="container">
+
+        <div data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
+            <h1>Download Android Application</h1>
+        </div>
+
+        <div>
+            <p>Powered By</p>
+            <img id="appge" src="files/appge.png" alt="" style="width: 300px; height: 50px;" data-aos="flip-up"
+                data-aos-delay="500">
+        </div>
+
+        <div>
+            <hr>
+        </div>
+
+        <div>
+            <a href="files/convid19info.apk" class="btn btn-lg dw-btn">
+                <i class="fa fa-download"></i> Download
+            </a>
+        </div>
+
+        <div>
+            <h3>Or</h3>
+        </div>
+
+        <div>
+            <h1>Scan QR Code</h1>
+            <img src="files/download.png" alt="Scan QR Code">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- -------------------- download -------------------------- -->
+
+
+    <button onclick="gotoTop()" id="topBtn" title="Go to top">
+        <i class="fa fa-chevron-up" style="font-size:48px;color:red"></i>
+    </button>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>Created with &hearts; For Our Country.</p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

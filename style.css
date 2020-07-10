@@ -338,3 +338,32 @@ footer p {
 .knowledge-gif:hover {
   padding: 0;
 }
+
+#dw-container {
+  color: var(--main-color);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#dw-container > div {
+  margin-bottom: 50px;
+}
+
+#dw-container hr {
+  border-color: var(--main-color);
+}
+
+
+#appge {
+  transition: transform 0.8s;
+}
+
+#appge:hover {
+  transform: rotateY(180deg);
+}
+
+.dw-btn {
+  background: var(--main-color);
+  color: white;
+}
