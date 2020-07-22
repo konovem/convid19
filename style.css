@@ -1,15 +1,17 @@
 :root {
-  --main-color: #F07645;
+  --main-color: #f07645;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -61,9 +63,7 @@ header p {
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
-  /* color: #f1f1f1; */
   color: var(--main-color);
 }
 
@@ -92,23 +92,25 @@ header p {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left 0.5s; /* If you want a transition effect */
   padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
 }
 
 /* --------------Nav Bar------------------------- */
 
-
 #menu-bar {
   background: red;
   text-align: center;
-  /* padding: 10px 0px; */
   cursor: pointer;
   color: white;
   font-size: 1.5em;
@@ -123,7 +125,6 @@ header p {
 #menu-bar > p {
   padding: 10px 0;
 }
-
 
 /* --------------------------------------------------------- */
 small {
@@ -169,7 +170,6 @@ footer p {
   opacity: 0.4;
 }
 
-
 /* ---------Call Center------------- */
 
 #call-mohs {
@@ -179,32 +179,30 @@ footer p {
   margin-bottom: 100px;
 }
 
-
 .callButton {
-	box-shadow: 3px 4px 0px 0px #1564ad;
-	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	background-color:#79bbff;
-	border-radius:5px;
-	border:1px solid #337bc4;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	font-weight:bold;
-	padding:12px 44px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
+  box-shadow: 3px 4px 0px 0px #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #528ecc;
 }
 .callButton:hover {
-	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-	background-color:#378de5;
+  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color: #378de5;
 }
 .callButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-
 
 /* ---------Call Center------------- */
 
@@ -256,9 +254,7 @@ footer p {
   margin-bottom: 100px;
 }
 
-
 /* clinic address */
-
 
 /* go to top btn */
 
@@ -282,11 +278,9 @@ footer p {
 
 /* go to top btn */
 
-
 .ques {
   padding: 10px 0;
   font-size: 1em;
-  
 }
 
 #result {
@@ -329,8 +323,8 @@ footer p {
 .knowledge-gif {
   max-width: 100%;
   height: auto;
-  box-shadow: 6px 7px 24px -1px rgba(0,0,0,0.44);
-  margin:100px 0 50px 0;
+  box-shadow: 6px 7px 24px -1px rgba(0, 0, 0, 0.44);
+  margin: 100px 0 50px 0;
   padding: 20px;
   background: var(--main-color);
 }
@@ -353,7 +347,6 @@ footer p {
 #dw-container hr {
   border-color: var(--main-color);
 }
-
 
 #appge {
   transition: transform 0.8s;
