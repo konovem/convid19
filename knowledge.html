@@ -14,9 +14,9 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -41,11 +41,11 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--For Pie Chart-->
 
-    <script src="piechart.js"></script>
+    <script src="js/piechart.js"></script>
 
-    <script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 
-    <script src="gototop.js"></script>
+    <script src="js/gototop.js"></script>
 
 
 </head>
@@ -72,7 +72,7 @@
         <a href="index.html#menu-bar">ပင်မစာမျက်နှာ</a>
         <a href="mohs-call-center.html#menu-bar">MOHS Call Center</a>
         <a href="clinics.html#menu-bar">ဆေးခန်းများ</a>
-        <a href="knowledge.html#menu-bar">အသိပညာပေး</a>
+        <a href="knowledge.html#menu-bar" id="active">အသိပညာပေး</a>
         <a href="knowledgetest.html#menu-bar">Test Your Knowledge</a>
         <a href="download.html#menu-bar">Download Android App</a>
     </div>
@@ -211,7 +211,9 @@
     </footer>
 
     <script>
-        AOS.init();
+        $(document).ready(function () {
+            AOS.init();
+        })
     </script>
 
 </body>

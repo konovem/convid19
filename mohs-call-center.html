@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="aos/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -34,11 +34,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos/aos.js"></script>
 
-    <script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 
-    <script src="gototop.js"></script>
+    <script src="js/gototop.js"></script>
 
 
 </head>
@@ -63,7 +63,7 @@
      <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html#menu-bar">ပင်မစာမျက်နှာ</a>
-        <a href="mohs-call-center.html#menu-bar">MOHS Call Center</a>
+        <a href="mohs-call-center.html#menu-bar" id="active">MOHS Call Center</a>
         <a href="clinics.html#menu-bar">ဆေးခန်းများ</a>
         <a href="knowledge.html#menu-bar">အသိပညာပေး</a>
         <a href="knowledgetest.html#menu-bar">Test Your Knowledge</a>
@@ -71,7 +71,7 @@
     </div>
 
 
-    <!-- -------------------------------MOHS Call Center-------------------------------------------------------- -->
+    <!-- --------------------MOHS Call Center----------------- -->
 
     <div id="call-mohs" class="container">
 
@@ -134,7 +134,7 @@
 
 
 
-    <!-- -------------------------------MOHS Call Center-------------------------------------------------------- -->
+    <!-- ---------------------MOHS Call Center--------------------------- -->
 
     <button onclick="gotoTop()" id="topBtn" title="Go to top">
         <i class="fa fa-chevron-up" style="font-size:48px;color:red"></i>

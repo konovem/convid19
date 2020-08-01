@@ -10,10 +10,27 @@
     padding: 30px 0;
     margin: 40px;
   }
+
+  #ques_container > h3 {
+    font-size: 18px;
+    line-height: 2em;
+  }
+
+  #call-mohs > h3 {
+    line-height: 1.5em;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  #ques_container > h3 {
+    line-height: 1.5em;
+  }
+
+  #call-mohs > h3 {
+    line-height: 1.5em;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

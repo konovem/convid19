@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>ပင်မစာမျက်နှာ</title>
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="aos/aos.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -36,16 +36,16 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="aos/aos.js"></script>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!--For Pie Chart-->
 
-    <script src="piechart.js"></script>
+    <script src="js/piechart.js"></script>
 
-    <script src="sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 
-    <script src="gototop.js"></script>
+    <script src="js/gototop.js"></script>
 
 
 </head>
@@ -70,7 +70,7 @@
     <!-- navbar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html#menu-bar">ပင်မစာမျက်နှာ</a>
+        <a href="index.html#menu-bar" id="active">ပင်မစာမျက်နှာ</a>
         <a href="mohs-call-center.html#menu-bar">MOHS Call Center</a>
         <a href="clinics.html#menu-bar">ဆေးခန်းများ</a>
         <a href="knowledge.html#menu-bar">အသိပညာပေး</a>
@@ -79,15 +79,15 @@
     </div>
 
 
-    <!-- ------------------------------Main.HTML------------------------------------------------------------ -->
+    <!-- -------------------Main.HTML----------------------------- -->
 
     <div id="card-container" class="container">
         <h2>COVID-19 CORONAVIRUS PANDEMIC SITUATION IN MYANMAR</h2>
-        <small>(Updated On April 18, 10:21AM)</small>
+        <small>(Updated On August 2, 12:31AM)</small>
         <div class="row">
             <div class="col-lg card bg-dark shadow-lg rounded" data-aos="flip-left">
                 <h2>သေဆုံးသူ</h2>
-                <p class="large-num">၅</p>
+                <p class="large-num">၆</p>
             </div>
 
             <div class="col-lg card bg-danger shadow-lg rounded" data-aos="flip-up">
@@ -97,7 +97,7 @@
 
             <div class="col-lg card bg-warning shadow-lg rounded" data-aos="flip-right">
                 <h2>ပိုးတွေ့ရှိ</h2>
-                <p class="large-num">၉၄</p>
+                <p class="large-num">၃၅၃</p>
             </div>
 
         </div>
@@ -105,20 +105,20 @@
         <div class="row">
             <div class="col-lg card bg-primary shadow-lg rounded" data-aos="flip-down">
                 <h2>သက်သာပျောက်ကင်း</h2>
-                <p class="large-num">၅,၀၀၀</p>
+                <p class="large-num">၂၉၇</p>
             </div>
         </div>
 
         <div class="row">
             <div class="col-lg card bg-dark shadow-lg rounded" data-aos="flip-down">
                 <h2>World's Death</h2>
-                <p class="large-num">၁၅၄,၂၆၂</p>
+                <p class="large-num">၆၈၅,၇၆၀</p>
             </div>
         </div>
 
         <!-- ----------death table------------------- -->
 
-        <div id="death-table" class="container">
+        <div id="death-table" class="container myBorder bshad">
 
             <table class="table table-striped table-responsive-lg">
                 <caption>ကွန်ဗစ်-၁၉ဗိုင်းရပ်စ်ကြောင့် မြန်မာနိုင်ငံတွင် သေဆုံးသူစာရင်း</caption>
@@ -210,7 +210,7 @@
 
         <!-- ----------pie chart------------------- -->
 
-        <div class="container">
+        <div class="container myBorder bshad">
             <div id="piechart" style="width: 100%; height: 300px;"></div>
         </div>
 
@@ -234,7 +234,7 @@
     </div>
 
 
-    <!-- ------------------------------Main.HTML------------------------------------------------------------ -->
+    <!-- ------------------------------Main.HTML---------------------------- -->
 
     <button onclick="gotoTop()" id="topBtn" title="Go to top">
         <i class="fa fa-chevron-up" style="font-size:48px;color:red"></i>
@@ -249,7 +249,9 @@
     </footer>
 
     <script>
-        AOS.init();
+        $(document).ready(function () {
+            AOS.init();
+        })
     </script>
 
 </body>

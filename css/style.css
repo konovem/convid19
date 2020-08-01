@@ -63,7 +63,7 @@ header p {
   transition: 0.3s;
 }
 
-.sidebar a:hover {
+#active, .sidebar > a:hover{
   color: var(--main-color);
 }
 
@@ -156,6 +156,11 @@ small {
 
 #death-table {
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.myBorder {
+  border: 5px solid var(--main-color);
 }
 
 footer {
@@ -180,11 +185,7 @@ footer p {
 }
 
 .callButton {
-  box-shadow: 3px 4px 0px 0px #1564ad;
-  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-  background-color: #79bbff;
   border-radius: 5px;
-  border: 1px solid #337bc4;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
@@ -193,11 +194,13 @@ footer p {
   font-weight: bold;
   padding: 12px 44px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #528ecc;
+  background:#f07545d3;
+  border: 1px solid white;
+  box-shadow: -1px -1px 19px -7px rgba(0,0,0,0.75);
 }
 .callButton:hover {
-  background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
-  background-color: #378de5;
+  background:#f07545;
+  box-shadow: -1px -1px 29px -1px rgba(0,0,0,0.75);
 }
 .callButton:active {
   position: relative;
@@ -357,6 +360,17 @@ footer p {
 }
 
 .dw-btn {
-  background: var(--main-color);
+  background:#f07545d3;
   color: white;
+  box-shadow: -1px -1px 19px -7px rgba(0,0,0,0.75);
+}
+
+.dw-btn:hover, .dw-btn:active{
+  background:#f07545;
+  color: white;
+  box-shadow: -1px -1px 30px -1px rgba(150,145,150,1);
+}
+
+.bshad {
+  box-shadow: 28px 27px 15px -26px rgba(150,145,150,1);
 }
